@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.firstElement {
+    width: 440px;
+    height: 1000px;
+    background-color: lightgrey ;
+}
+
+.firstTop {
+    width: 100%;
+    height: 50%;
+    background-color: skyblue;
+}
+
+.firstBottom {
+    width: 100%;
+    height: 50%;
+    background-color: lightpink;
+}
+
+.secondElement {
+    width: 1000px;
+    height: 1000px;
+}
+
+.secondTop {
+    width: 100%;
+    height: 50%;
+    background-color: lightgreen;
+}
+
+.secondBottom {
+    width: 100%;
+    height: 50%;
+    background-color: burlywood;
+}
