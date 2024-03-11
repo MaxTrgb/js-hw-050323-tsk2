@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>    
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <main>
         <section class="hero">
-            <div class="firstElement">
-                <div class="firstTop"></div>
-                <div class="firstBottom"></div>
-            </div>
-            <div class="secondElement">
-                <div class="secondTop" ></div>
-                <div class="secondBottom"></div>
-            </div>
+            <div class="main-container">
+                <div class="block left-block fdc">
+                  <div class="block first-block resize-bottom">
+                    <div class="content"><span class="current-width"></span></div>
+                    <div class="resizer">
+                      <span class="resizer-cover"></span>
+                      <span class="resizer-icon">&#8286;</span>
+                    </div>
+                  </div>
+                  <div class="block second-block">
+                    <div class="block third-block resize-right">
+                      <div class="content"><span class="current-width"></span></div>
+                      <div class="resizer">
+                        <span class="resizer-cover"></span>
+                        <span class="resizer-icon">&#8286;</span>
+                      </div>
+                    </div>
+                    <div class="block fourth-block">
+                      <div class="content"><span class="current-width"></span></div>
+              
+                    </div>
+                  </div>
+                </div>
+                <div class="block right-block resize-left">
+                  <div class="resizer">
+                    <span class="resizer-cover"></span>
+                    <span class="resizer-icon">&#8286;</span>
+                  </div>
+                  <div class="content"><span class="current-width"></span></div>
+              
+                </div>
+              </div>
         </section>
     </main>
+    <script src="script/index.js"></script>
 </body>
+
 </html>

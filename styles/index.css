@@ -1,45 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-.hero{
-    height: 100%;
-    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  
+  span {
+    display: inline-block;
+  }
+  
+  .main-container {
+    height: 100dvh;
     display: flex;
-    flex-direction: row;
-}
-.firstElement {
-    width: 440px;
-    height: 1000px;
-    background-color: lightgrey ;
-}
-
-.firstTop {
+    overflow: hidden;
+  }
+  .block {
+    display: flex;
+  }
+  .left-block {
+    flex: 1;
+    min-width: 300px;
+  }
+  .fdc {
+    flex-direction: column;
+  }
+  .right-block {
+    background-color: lightcoral;
+    min-width: 400px;
+  }
+  
+  .resizer {
+    height: 100%;
+    cursor: col-resize;
+    width: 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+  }
+  
+  .resizer > .resizer-icon {
+    display: inline-block;
+    font-size: 24px;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .resizer > .resizer-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: transparent;
     width: 100%;
-    height: 50%;
-    background-color: skyblue;
-}
-
-.firstBottom {
-    width: 100%;
-    height: 50%;
-    background-color: lightpink;
-}
-
-.secondElement {
-    width: 1000px;
-    height: 1000px;
-}
-
-.secondTop {
-    width: 100%;
-    height: 50%;
+  }
+  
+  .block > .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .first-block {
+    background-color: lightblue;
+    min-height: 200px;
+  }
+  
+  .second-block {
     background-color: lightgreen;
-}
-
-.secondBottom {
+    flex: 1;
+  }
+  
+  .getting-resized {
+    filter: brightness(80%) !important;
+  }
+  .resize-bottom,
+  .resize-top {
+    flex-direction: column;
+  }
+  .resize-bottom .resizer,
+  .resize-top .resizer {
     width: 100%;
-    height: 50%;
-    background-color: burlywood;
-}
+    height: 10px;
+    cursor: row-resize;
+  }
+  .resize-bottom .resizer-icon,
+  .resize-top .resizer-icon {
+    rotate: 90deg;
+  }
+  .third-block {
+    min-width: 200px;
+  }
+  .fourth-block {
+    flex: 1;
+    background-color: lightseagreen;
+  }
+  
